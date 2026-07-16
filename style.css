@@ -1,0 +1,71 @@
+:root {
+    --gold: #FFD700;
+    --pink: #ff758c;
+    --purple: #7474bf;
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(15px);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    transition: all 0.5s ease;
+    z-index: 10;
+}
+
+/* Envelope Animation */
+.envelope {
+    width: 100px;
+    height: 70px;
+    background: var(--pink);
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.envelope:hover { transform: scale(1.1); }
+
+/* Gallery */
+.photo-glow {
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--pink);
+    transition: transform 0.3s;
+}
+
+.photo-glow:hover { transform: scale(1.05); }
+
+/* Timer */
+#timer { font-size: 1.5rem; font-weight: bold; color: var(--gold); margin: 20px 0; }
+
+.hidden { display: none; opacity: 0; }
+
+/* Fireworks / Effects Placeholder */
+.music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: var(--glass);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+                                
